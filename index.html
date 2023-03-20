@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>爷爷养兔竟误入元宇宙</title>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+<link rel="stylesheet" href="css/index.css?v=4.1" />
+</head>
+<body style="background-color:#fff;">
+<div class="loading" id="loading">
+    <div class="loading-center-absolute clearfix">
+        <div class="loading-item"></div>
+        <div class="loading-item"></div>
+        <div class="loading-item"></div>
+        <div class="loading-item"></div>
+    </div>
+    <p class="loading-progress">Loading...<span id="load-progress">1</span>%</p>
+</div>
+<div class="music on" onclick="playClicked(this)"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/units-icons.png" /></div>
+<div class="container">
+	<!-- 背景 -->
+	<p class="page-bg page-bg-welcome hide"></p>
+	<p class="page-bg page-bg-main hide"></p>
+	<p class="page-bg page-bg-quiz1 hide"></p>
+	<p class="page-bg page-bg-quiz2 hide"></p>
+	<p class="page-bg page-bg-quiz3 hide"></p>
+	<p class="page-bg page-bg-quiz4 hide"></p>
+	<p class="page-bg page-bg-quiz5 hide"></p>
+	<p class="page-bg page-bg-introduce hide"></p>
+	<p class="page-bg page-bg-poster hide"></p>
+
+	<!-- 弹幕 -->
+	<div class="barrage-wrap" id="J_barrage"></div>
+
+	<!-- 页面 -->
+	<div class="page welcome hide link-load" nextHash="main" id="welcome">
+		<p class="img01">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p1-1.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p1-2.png?v=3.1" />
+		</p>
+		<p class="img02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p1-3.png" /></p>
+		<p class="img03"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p1-4.png" /></p>
+	</div>
+	<div class="page main hide" id="main">
+		<p class="img01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-1.png" /></p>
+		<p class="img02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-2.png" /></p>
+		<p class="img03"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-3.png" /></p>
+		<p class="img04"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-4.png" /></p>
+		<p class="img05">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-10.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-11.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-12.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-13.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-14.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-15.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-16.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-17.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-18.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-20.png?v=4.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-19.png?v=3.1" class="link-load" nextHash="quiz1" />
+		</p>
+	</div>
+	<div class="page quiz quiz1 hide" id="quiz1" title="数字兔" posterID="1">
+		<p class="img01">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-1.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-9.png" />
+		</p>
+		<p class="rabbit">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-2.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-4.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-10.png?v=3.1" class="pop-up hide" />
+		</p>
+		<p class="img03">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-7.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p1-5.png" />
+		</p>
+		<p class="btn btn-1 btn-poster" title="不想养了"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-5.png" /></p>
+		<p class="btn btn-2 btn-share" title="告诉朋友"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-6.png" /></p>
+		<p class="btn-msg" title="我要评论"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-1.png" /></p>
+		<div class="quiz-result-wrap hide">
+			<div class="content">
+				<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-7.png?v=1.1" />
+				<p class="txt1">数字兔</p>
+				<p class="txt2"><span>近年来，随着大数据、云计算、物联网、人工智能等新一代信息科技的崛起，以数据为要素、以服务为核心的数字贸易正蓬勃兴起。</span></p>
+				<p class="btn3"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-8.png" /></p>
+			</div>
+		</div>
+		<div class="quiz-pro-wrap hide">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-4.png" />
+			<div class="txt-wrap">
+				<p class="txt">是否给你的 数字兔 标记知识产权？</p>
+			</div>
+			<p class="btn2 btn2-1 btn-poster" title="否"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-5.png" /></p>
+			<p class="btn2 btn2-2 link-load" nextHash="quiz2" title="是"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-6.png" /></p>
+		</div>
+	</div>
+	<div class="page quiz quiz2 hide" id="quiz2" title="产权兔" posterID="2">
+		<p class="desc desc01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-10.png?v=2.2" /></p>
+		<p class="rabbit">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-2.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-3.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-11.png?v=3.1" class="pop-up hide" />
+		</p>
+		<p class="btn btn-1 btn-poster"title="不想养了"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-5.png" /></p>
+		<p class="btn btn-2 btn-share" title="告诉朋友"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-6.png" /></p>
+		<p class="btn-msg" title="我要评论"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-1.png" /></p>
+		<div class="quiz-result-wrap hide">
+			<div class="content">
+				<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-7.png?v=1.1" />
+				<p class="txt1">产权兔</p>
+				<p class="txt2"><span>知识产权制度作为保护智力劳动成果的一项重要制度，是数字贸易中关键的护航者。</span><span>浙江省大力推进知识产权服务建设，成为首批国家知识产权服务出口基地省份之一。</span></p>
+				<p class="btn3"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-8.png" /></p>
+			</div>
+		</div>
+		<div class="quiz-pro-wrap hide">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-4.png" />
+			<div class="txt-wrap">
+				<p class="txt">是否让你的 产权兔 参与影视制作？</p>
+			</div>
+			<p class="btn2 btn2-1 btn-poster" title="否"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-5.png" /></p>
+			<p class="btn2 btn2-2 link-load" nextHash="quiz3" title="是"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-6.png" /></p>
+		</div>
+	</div>
+	<div class="page quiz quiz3 hide" id="quiz3" title="文艺兔" posterID="3">
+		<p class="desc desc01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-4.png" /></p>
+		<p class="rabbit">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-2.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-3.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-11.png?v=3.1" class="pop-up hide" />
+		</p>
+		<p class="desc desc02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-5.png" /></p>
+		<p class="desc desc03"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-6.png" /></p>
+		<p class="desc desc04"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-7.png" /></p>
+		<p class="desc desc05"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-8.png" /></p>
+		<p class="desc desc06"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-9.png" /></p>
+		<p class="desc desc07"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p5-10.png" /></p>
+		<p class="btn btn-1 btn-poster" title="不想养了"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-5.png" /></p>
+		<p class="btn btn-2 btn-share" title="告诉朋友"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-6.png" /></p>
+		<p class="btn-msg" title="我要评论"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-1.png" /></p>
+		<div class="quiz-result-wrap hide">
+			<div class="content">
+				<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-7.png?v=1.1" />
+				<p class="txt1">文艺兔</p>
+				<p class="txt2"><span>浙江的文化产品在对外经济贸易中占有举足轻重位置。</span><span>最新数据显示，2021年，浙江文化服务进出口额达157.06亿元。</span></p>
+				<p class="btn3"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-8.png" /></p>
+			</div>
+		</div>
+		<div class="quiz-pro-wrap hide">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-4.png" />
+			<div class="txt-wrap">
+				<p class="txt">是否让你的 文艺兔 漂洋出海？</p>
+			</div>
+			<p class="btn2 btn2-1 btn-poster" title="否"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-5.png" /></p>
+			<p class="btn2 btn2-2 link-load" nextHash="quiz4" title="是"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-6.png" /></p>
+		</div>
+	</div>
+	<div class="page quiz quiz4 hide" id="quiz4" title="国际兔" posterID="4">
+		<p class="rabbit">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p6-2.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p6-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p6-6.png?v=3.1" class="pop-up hide" />
+		</p>
+		<p class="desc desc01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p6-4.png" /></p>
+		<p class="desc desc02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p6-5.png" /></p>
+		<p class="btn btn-1 btn-poster" title="不想养了"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-5.png" /></p>
+		<p class="btn btn-2 btn-share" title="告诉朋友"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-6.png" /></p>
+		<p class="btn-msg" title="我要评论"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-1.png" /></p>
+		<div class="quiz-pro-wrap hide">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-4.png" />
+			<div class="txt-wrap">
+				<p class="txt">是否让你的 国际兔 继续进化？</p>
+			</div>
+			<p class="btn2 btn2-1 btn-poster" title="否"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-5.png" /></p>
+			<p class="btn2 btn2-2 link-load" nextHash="quiz5" title="是"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-6.png" /></p>
+		</div>
+		<div class="quiz-result-wrap hide">
+			<div class="content">
+				<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-7.png?v=1.1" />
+				<p class="txt1">国际兔</p>
+				<p class="txt2"><span>跨境电商是数字贸易中的重要形式，它使得民营小微主体成为新型贸易的经营者。</span><span>2022年前10个月，浙江跨境电商进出口额3045.4亿元，同比增长18.3%。</span></p>
+				<p class="btn3"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-8.png" /></p>
+			</div>
+		</div>
+	</div>
+	<div class="page quiz quiz5 hide" id="quiz5" title="X兔" posterID="5">
+		<p class="desc desc01"></p>
+		<p class="rabbit">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p7-2.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p7-3.png?v=3.1" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p7-5.png?v=3.1" class="pop-up hide" />
+		</p>
+		<p class="btn btn-1 btn-poster" title="不想养了"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-5.png" /></p>
+		<p class="btn btn-2 btn-share" title="告诉朋友"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-6.png" /></p>
+		<p class="btn-msg" title="我要评论"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-1.png" /></p>
+		<div class="quiz-pro-wrap hide">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-4.png" />
+			<div class="txt-wrap">
+				<p class="txt">是否跟随 X兔 继续了解？</p>
+			</div>
+			<p class="btn2 btn2-1 btn-poster" title="否"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-5.png" /></p>
+			<p class="btn2 btn2-2 link-load" nextHash="introduce" title="是"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-6.png" /></p>
+		</div>
+		<div class="quiz-result-wrap hide">
+			<div class="content">
+				<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-7.png?v=1.1" />
+				<p class="txt1">X兔</p>
+				<p class="txt2"><span>从数字技术到金融服务，数字服务涵盖的边界越来越广，抓住数字经济风口的浙江有了更深厚的培育土壤。</span><span>2022年1-10月，浙江数字服务贸易进出口1669.2亿元，同比增长6.9%。</span></p>
+				<p class="btn3"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p4-8.png" /></p>
+			</div>
+		</div>
+	</div>
+	<div class="page introduce hide" id="introduce">
+		<p class="img01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-1.png" /></p>
+		<p class="img02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-2.png" /></p>
+		<p class="img03"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-3.png" /></p>
+		<p class="img04"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-4.png" /></p>
+		<p class="img05"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-1.png?v=3.1" /></p>
+		<div class="video-wrap">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/poster1.png?v=3.1" />
+			<div class="video-content hide"></div>
+			<p class="btn-video btn-play-video" videoID="1"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-3.png" /></p>
+			<p class="end-video hide"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-6.png" /></p>
+			<p class="btn-video2 btn-play-video" videoID="2"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-5.png" /></p>
+		</div>
+		<p class="img06 link-load" nextHash="poster">
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-5.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-6.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-7.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-8.png" />
+			<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-2.png?v=3.1" />
+		</p>
+	</div>
+	<div class="page poster hide" id="poster">
+		<!-- <p class="img01"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-1.png" /></p>
+		<p class="img02"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-2.png" /></p>
+		<p class="img03"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-3.png" /></p>
+		<p class="img04"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p2-4.png" /></p> -->
+		<div class="swiper-container" id="swiper">
+			<div class="swiper-wrapper"></div>
+		   <p class="resize1"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p12-1.png" /></p>
+		   <p class="resize2"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p12-2.png" /></p>
+		</div>
+	</div>
+</div>
+
+<div class="layer layer-share1 hide" id="L_share1">
+	<p class="btn btn-1 close-layer"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p9-2.png" /></p>
+	<p class="btn btn-2"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p9-3.png" /></p>
+	<p class="txt"></p>
+</div>
+<div class="layer layer-share hide" id="L_share">
+	<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p3-8.png" />
+</div>
+<div class="layer layer-poster hide" id="L_poster">
+	<div class="content content-1 hide">
+		<img class="poster-img" />
+		<p class="close-layer"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p8-2.png" /></p>
+	</div>
+	<div class="content content-2">
+		<p class="tips">正在生成您的数字藏品证书，<br/>请稍等……</p>
+	</div>
+</div>
+<div class="layer layer-video hide" id="L_video">
+	<div class="content"></div>
+	<p class="end-video"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p10-4.png" /></p>
+</div>
+<div class="layer layer-msg hide" id="L_msg">
+	<div class="msg-content">
+		<img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-2.png" />
+		<p class="texteara-content"><textarea name="msg" class="msg" maxlength="20"></textarea></p>
+		<p class="texteara-btn"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p11-3.png" /></p>
+		<p class="close-layer"><img src="http://lalicdn.weijiasu.cn/yan/20221214/v2/img/p8-2.png" /></p>
+	</div>
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="http://lalicdn.weijiasu.cn/lib/js/wxsdk_vanke.js"></script>
+<script>
+var imgURL = 'http://lalicdn.weijiasu.cn/yan/20221214/v2/';
+
+window.wxShare && window.wxShare({
+	img     : "http://l.weijiasu.cn/h5/yan/20221214/img/share.jpg?v=3.1",
+	linkurl : "http://l.weijiasu.cn/h5/yan/20221214/",
+	desc    : "",
+	title 	: "爷爷养兔竟误入元宇宙"
+});
+</script>
+<script src="js/main.js?v=4.1"></script>
+</body>
+</html>
